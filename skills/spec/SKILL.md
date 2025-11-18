@@ -43,6 +43,9 @@ Group requirements into logical sections:
 **Requirement naming:**
 - Use feature-specific prefix
 - Number sequentially starting from 001
+- Sequentiallity does not need to be enforced (reduce work renumbering)
+  - you can skip numbers if a requirement is removed
+  - add characters if add a requirement between other requirements
 - Keep requirements atomic and testable
 - One requirement per line
 

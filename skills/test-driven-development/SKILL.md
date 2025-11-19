@@ -1,5 +1,5 @@
 ---
-name: tdd
+name: test-driven-development
 description: Test-Driven Development workflow using RED-GREEN-REFACTOR cycle - write one test, see it fail, implement minimal code, verify all tests pass, repeat
 ---
 
@@ -8,8 +8,8 @@ description: Test-Driven Development workflow using RED-GREEN-REFACTOR cycle - w
 This skill defines the proper TDD workflow: write ONE test, run it (RED), implement minimal code (GREEN), run ALL tests, repeat.
 
 **Language-specific details**:
-- For Python projects: See `tdd/PYTHON.md` for pytest patterns, running tests, and Python-specific examples
-- Other languages: Add new files to `tdd/` directory as needed
+- For Python projects: See `test-driven-development/PYTHON.md` for pytest patterns, running tests, and Python-specific examples
+- Other languages: Add new files to `test-driven-development/` directory as needed
 
 ## TDD Cycle: RED → GREEN → REFACTOR
 

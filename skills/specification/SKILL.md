@@ -1,5 +1,5 @@
 ---
-name: spec
+name: specification
 description: Write specifications following project conventions - includes requirement format, scenario structure, and Given/When/Then patterns
 ---
 

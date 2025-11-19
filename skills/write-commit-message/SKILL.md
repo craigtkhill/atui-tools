@@ -1,5 +1,5 @@
 ---
-name: commit-message
+name: write-commit-message
 description: Guidelines for writing effective git commit messages using conventional commits style
 ---
 

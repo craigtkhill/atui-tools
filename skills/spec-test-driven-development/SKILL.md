@@ -1,6 +1,6 @@
 ---
-name: stdd
-description: Specification-Test-Driven Development workflow - write spec first, then tests, then implementation - uses spec and tdd skills
+name: spec-test-driven-development
+description: Specification-Test-Driven Development workflow - write spec first, then tests, then implementation - uses specification and test-driven-development skills
 ---
 
 # Spec-TDD Development Workflow
@@ -10,9 +10,9 @@ When developing ANY new feature or functionality, follow this strict workflow:
 ## Workflow Steps
 
 ### 1. Write Specification FIRST (spec.md)
-**Use the `spec` skill to write specifications following project conventions.**
+**Use the `specification` skill to write specifications following project conventions.**
 
-The spec skill provides detailed guidelines for:
+The specification skill provides detailed guidelines for:
 - Feature user story format (As a... I want... So that...)
 - Requirements organization and naming (REQ-XXX-NNN)
 - Requirement writing guidelines (atomic, testable, present tense)
@@ -50,9 +50,9 @@ After writing spec:
 - If tests fail, fix the implementation and re-run until all tests pass
 - **DO NOT claim work is complete without running and passing tests**
 
-**Use the `tdd` skill for language-specific test running instructions:**
+**Use the `test-driven-development` skill for language-specific test running instructions:**
 - The TDD skill contains detailed patterns for running tests
-- For other languages: See corresponding files in `tdd/{language}.md`
+- For other languages: See corresponding files in `test-driven-development/{language}.md`
 
 ### 5. Run Pre-commit Hooks Before Completion
 - **CRITICAL: After tests pass, ALWAYS run pre-commit hooks**
@@ -67,7 +67,7 @@ pre-commit run --all-files
 
 ## Commit Workflow
 
-**Use the `commit-message` skill for git commit guidelines.**
+**Use the `write-commit-message` skill for git commit guidelines.**
 
 ## Do NOT Proceed Without
 

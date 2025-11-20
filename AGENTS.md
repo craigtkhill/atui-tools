@@ -1,8 +1,9 @@
-**IMPORTANT**: For ALL feature development and implementation tasks, you MUST use the `spec-test-driven-development` skill.
+**CRITICAL**: You MUST list all skills so you know the capabilities and guidance available to you and make use of them when appropriate. For ALL software development tasks, you MUST read and use the `spec-test-driven-development` skill.
+**IMPORTANT: When creating/updating skills**, use the `create-skill` skill for proper structure and conventions
 
-The `spec-test-driven-development` skill uses 
-- the `specification` skill for writing specifications.
-- the `test-driven-development` skill for writing tests.
+The `spec-test-driven-development` skill uses:
+- `specification` skill for writing specifications
+- `test-driven-development` skill for writing tests
   - /{PROGRAMMING_LANGUAGE}.md for language specific guidance
-- the `write-commit-message` for writing commit messages
-
+- `write-commit-message` for writing commit messages
+- `install-dependencies` for managing dependencies

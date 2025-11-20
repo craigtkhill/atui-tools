@@ -6,10 +6,19 @@ description: Write specifications following project conventions - includes requi
 # Specification Writing Skill
 
 This skill defines how to write specifications that follow the project's conventions.
+**CRITICAL:** Stick to the Domain Specific Language in this document. Do not add you own extra headings for example.
+
+## Specification Location
+
+**Specifications live close to the code** following the principle of locality of behavior:
+
+- Spec filename: `SPEC.md` (uppercase)
+- Location: In the same directory as the code it specifies, or in a feature-specific subdirectory
+- Example: `src/feature/SPEC.md` or `src/feature/SPEC.md`
 
 ## Specification Format
 
-Every spec.md file must follow this structure:
+Every SPEC.md file must follow this structure:
 
 ### 1. Feature Header
 ```markdown
@@ -50,6 +59,8 @@ Group requirements into logical sections:
 - One requirement per line
 
 ### 4. Scenarios
+
+**IMPORTANT:** ONLY add scenarios for modules that require end to end testing with other modules. By default don't add scenarios but elicit from the human if they think Scenarios/Acceptance Testing apply to this feature.  
 
 **Use Given/When/Then format:**
 - **Given** - Setup/preconditions

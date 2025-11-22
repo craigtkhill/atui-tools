@@ -36,6 +36,10 @@ Add ATUI Tools to your project as a git submodule in the `.claude/` directory:
 
 ```bash
 # In your project root
+# First, ensure your project is a git repository
+git init
+
+# Add ATUI Tools as a submodule
 git submodule add https://github.com/craigtkhill/atui-tools.git .claude
 
 # Initialize and update the submodule

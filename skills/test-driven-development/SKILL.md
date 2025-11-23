@@ -19,10 +19,18 @@ Write a SINGLE test that fails.
 
 **Key principle**: The test must fail for the right reason (missing implementation, not syntax error).
 
-**Run the test - it MUST fail:**
+**CRITICAL - Run the test - it MUST fail:**
+- ❌ DO NOT write implementation before running the test
+- ❌ DO NOT skip the RED phase
+- ✅ DO run the test immediately after writing it
 - Run only the new test in isolation
 - Verify it fails with expected error (import error, assertion failure, etc.)
 - Expected outcome: RED (test fails)
+
+**Why RED is mandatory:**
+- Confirms the test actually tests something
+- Prevents false positives (tests that always pass)
+- Validates test setup is correct
 
 ### 2. GREEN: Write Minimal Implementation
 
@@ -87,10 +95,12 @@ Only after all tests pass, write the NEXT single test and repeat the cycle.
 - When acceptance test passes, mark related unit-tested features as implemented: `[U][O]` → `[U][X]`
 
 ### Rule 2: Always Run Tests
-Every test goes through three runs:
-1. Run new test **in isolation** to see it fail (RED)
-2. Run same test **in isolation** to see it pass (GREEN)
-3. Run **ALL tests** in the project to verify nothing broke (VERIFY)
+**CRITICAL**: Every test MUST go through THREE runs:
+1. **RED**: Run new test **in isolation** to see it FAIL (before implementing)
+2. **GREEN**: Run same test **in isolation** to see it PASS (after implementing)
+3. **VERIFY**: Run **ALL tests** in the project to verify nothing broke
+
+❌ **NEVER skip the RED phase** - Always see the test fail before implementing
 
 **Why run in isolation first?**
 - Faster feedback loop
@@ -283,18 +293,21 @@ Write test_3 → Run (RED) → Implement → Run (GREEN) → Verify all tests
 
 ## Checklist Before Moving to Next Test
 
-Use this checklist for EVERY test:
+Use this checklist for EVERY test **in this exact order**:
 
-- [ ] Test written with clear name and documentation
-- [ ] Test references specific requirement from spec
-- [ ] Test run in isolation and failed (RED) ✓
-- [ ] Minimal implementation written
-- [ ] Test run in isolation and passed (GREEN) ✓
-- [ ] ALL tests run and passed (VERIFY) ✓
-- [ ] **SPEC.md updated with test marker** ([U][O] or [A][O]) ✓
-- [ ] **SPEC.md updated with implementation marker** ([U][X] or [A][X]) if code complete ✓
-- [ ] Code refactored if needed (optional)
-- [ ] ALL tests still pass after refactoring
-- [ ] No broken tests
-- [ ] Ready for next test
+1. [ ] Test written with clear name and documentation
+2. [ ] Test references specific requirement from spec
+3. [ ] **Test run in isolation and FAILED (RED)** ✓ ← DO NOT SKIP THIS
+4. [ ] Minimal implementation written (ONLY after seeing RED)
+5. [ ] Test run in isolation and PASSED (GREEN) ✓
+6. [ ] ALL tests run and PASSED (VERIFY) ✓
+7. [ ] **SPEC.md updated with test marker** ([U][O] or [A][O]) ✓
+8. [ ] **SPEC.md updated with implementation marker** ([U][X] or [A][X]) if code complete ✓
+9. [ ] Code refactored if needed (optional)
+10. [ ] ALL tests still pass after refactoring
+11. [ ] No broken tests
+12. [ ] Ready for next test
+
+**Critical reminder:** Steps 3-6 MUST happen in order:
+- RED (test fails) → then implement → GREEN (test passes) → then VERIFY (all tests pass)
 

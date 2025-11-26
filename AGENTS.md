@@ -7,3 +7,4 @@ The `spec-test-driven-development` skill uses:
   - /{PROGRAMMING_LANGUAGE}.md files for language specific guidance
 - `write-commit-message` skill for writing commit messages
 - `install-dependencies` skill for managing dependencies
+- `evaluation` skill for creating and managing evaluations

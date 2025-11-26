@@ -112,14 +112,19 @@ When creating a new skill:
 - [ ] Test skill discovery with `/help`
 - [ ] Regiser skill to AGENTS.md
 
-## Common Mistakes to Avoid
+## Allows follow these practices
 
-❌ **Forgetting frontmatter** - SKILL.md must start with YAML frontmatter
-❌ **Weak descriptions** - Description must explain WHAT and WHEN
-❌ **Wrong filename** - Must be `SKILL.md` (uppercase), not `skill.md`
-❌ **Bad naming** - Use hyphens, not underscores or spaces
-❌ **No examples** - Always include concrete examples
-❌ **Too generic** - Be specific about when to use the skill
+✅ **Always include frontmatter** - SKILL.md must start with YAML frontmatter
+✅ **Write clear descriptions** - Description must explain WHAT and WHEN
+✅ **Use correct filename** - Must be `SKILL.md` (uppercase)
+✅ **Use proper naming** - Use lowercase letters and hyphens for separation
+✅ **Be specific** - Clearly define when to use the skill
+✅ **Keep content generic** - Do not make guidelines specific to the current project but Make SKILL.md and supporting files reusable across projects
+✅ **Separate language specifics** - Put language/tech-specific details in separate files (PYTHON.md, RUST.md, etc.)
+✅ **Provide complete templates** - Include full templates, not partial ones
+✅ **Prioritize clear descriptions** - Avoid examples or use generic examples only when necessary for clarity
+✅ **Work in small steps** - Only implement what was requested, collaborate incrementally in small steps with the user
+✅ **Use positive framing** - Describe what to do rather than what not to do when writing guidelines but use negatives when it provides extra clarity
 
 ## Skill Integration
 
